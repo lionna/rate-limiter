@@ -1,5 +1,6 @@
-﻿**Rate-limiting pattern**
+﻿**Rate-limiting test project**
 
+# TASK:
 Rate limiting involves restricting the number of requests that can be made by a client.
 A client is identified with an access token, which is used for every request to a resource.
 To prevent abuse of the server, APIs enforce rate-limiting techniques.
@@ -15,13 +16,13 @@ Some examples of request-limiting rules (you could imagine any others)
 
 The goal is to design a class(-es) that manage rate limits for every provided API resource by a set of provided *configurable and extendable* rules. For example, for one resource you could configure the limiter to use Rule A, for another one - Rule B, for a third one - both A + B, etc. Any combinations of rules should be possible, keep this fact in mind when designing the classes.
 
-We're more interested in the design itself than in some smart and tricky rate limiting algorithm. There is no need to use neither database (in-memory storage is fine) nor any web framework. Do not waste time on preparing complex environment, reusable class library covered by a set of tests is more than enough.
+_______
 
-There is a Test Project set up for you to use. You are welcome to create your own test project and use whatever test runner you would like.   
+#Solution
+![Sample image1](img/1.png)
 
-You are welcome to ask any questions regarding the requirements - treat us as product owners/analysts/whoever who knows the business.
-Should you have any questions or concerns, submit them as a [GitHub issue](https://github.com/crexi-dev/rate-limiter/issues).
+#Tests
+![Sample image1](img/2.png)
 
-You should [fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the project, and [create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) once you are finished.
-
-Good luck!
+#API
+![Sample image1](img/3.png)
